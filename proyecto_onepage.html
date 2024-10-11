@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mora Design</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">TOP🡱</button>
+<nav>
+    <ul class="nav-links" id="nav-links">
+        <li><a href="#hero">Inicio</a></li>
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#contact">Contacto</a></li>
+    </ul>
+    <div class="logo">MoraDesign</div>
+    <div class="menu-icon" id="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <ul class="nav-links2" id="nav-links2">
+        <li><a href="#hero">Inicio</a></li>
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#contact">Contacto</a></li>
+    </ul>
+</nav>
+    
+</header>
+
+    <!-- Hero Section (Inicio) -->
+<section id="hero" class="hero-section">
+    <div class="hero-container">
+        <div class="hero-text">
+            <h1>Mora Design</h1>
+            <p>Portafolio de diseño gráfico de <br> una estudiante de segundo año</p>
+            <a href="#servicios" class="btn-primary">Servicios</a>
+        </div>
+        <div class="hero-image">
+            <img src="Design Tools.jpg" alt="Diseño gráfico en tablet">
+        </div>
+    </div>
+</section>
+
+
+   <!-- About Section -->
+<section id="about" class="about-section">
+    <div class="about-content">
+        <div class="about-text">
+            <h3>Sobre mí</h3>
+            <h2>Creando imágenes, encendiendo la imaginación</h2>
+            <p>Soy una estudiante de segundo año de diseño
+                gráfico residida en Montevideo, me sumerjo en el
+                mundo de la creatividad y la innovación. Mi viaje
+                está impulsado por la pasión por la narración
+                visual y el deseo de dar vida a ideas únicas.
+                Acepto los desafíos como oportunidades para
+                crecer y superar los límites del diseño.
+                Cada proyecto refleja mi compromiso con la excelencia
+                y mi amor por la estética.</p>
+            <a href="#contact" class="contact-link">Contáctame</a>
+        </div>
+        <div class="about-image">
+            <img src="Studio.jpg" alt="Estudiante de diseño gráfico trabajando">
+        </div>
+    </div>
+</section>
+
+  <section id="proyectos" class="projects-section">
+    <h2>Proyectos</h2>
+    <div class="project-gallery">
+        <div class="project-item" data-title="Nombre del Proyecto 1" data-description="Descripción del Proyecto 1">
+            <img src="projecto1.jpeg" alt="Project 1">
+        </div>
+
+        <div class="project-item" data-title="Nombre del Proyecto 2" data-description="Descripción del Proyecto 2">
+            <img src="projecto2.jpeg" alt="Project 2">
+        </div>
+
+        <div class="project-item" data-title="Nombre del Proyecto 3" data-description="Descripción del Proyecto 3">
+            <img src="projecto3.jpeg" alt="Project 3">
+        </div>
+
+        <div class="project-item" data-title="Nombre del Proyecto 4" data-description="Descripción del Proyecto 4">
+            <img src="projecto4.jpeg" alt="Project 4">
+        </div>
+
+        <div class="project-item" data-title="Nombre del Proyecto 5" data-description="Descripción del Proyecto 5">
+            <img src="projecto5.jpeg" alt="Project 5">
+        </div>
+
+        <div class="project-item" data-title="Nombre del Proyecto 6" data-description="Descripción del Proyecto 6">
+            <img src="projecto6.jpeg" alt="Project 6">
+        </div>
+
+        <div class="project-item" data-title="Nombre del Proyecto 7" data-description="Descripción del Proyecto 7">
+            <img src="projecto7.jpeg" alt="Project 7">
+        </div>
+
+        <div class="project-item" data-title="Nombre del Proyecto 8" data-description="Descripción del Proyecto 8">
+            <img src="projecto8.jpeg" alt="Project 8">
+        </div>
+
+        <div class="project-item" data-title="Nombre del Proyecto 9" data-description="Descripción del Proyecto 9">
+            <img src="projecto9.jpeg" alt="Project 9">
+        </div>
+    </div>
+</section>
+
+<!-- Modal -->
+<div id="projectModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+    <div id="caption">
+        <h3 id="modalTitle"></h3>
+        <p id="modalDescription"></p>
+    </div>
+</div>
+
+  <!-- Services Section -->
+<section id="servicios" class="servicios-section">
+    <h2>Servicios</h2>
+    <p>Volvemos tus ideas una realidad</p>
+    <div class="servicios-grid">
+        <div class="servicios-item">
+            <img src="servicios1.jpeg" alt="Diseño de identidad visual">
+            <h3>Diseño de identidad visual</h3>
+            <p>Body text for whatever you’d like to say. Add main takeaway points, quotes, anecdotes, or even a very very short story.</p>
+        </div>
+        <div class="servicios-item">
+            <img src="servicios2.jpeg" alt="Ilustración">
+            <h3>Creación de lustración</h3>
+            <p>Body text for whatever you’d like to say. Add main takeaway points, quotes, anecdotes, or even a very very short story.</p>
+        </div>
+        <div class="servicios-item">
+            <img src="servicios3.jpeg" alt="Diseño de logotipos">
+            <h3>Diseño de logotipos</h3>
+            <p>Body text for whatever you’d like to say. Add main takeaway points, quotes, anecdotes, or even a very very short story.</p>
+        </div>
+    </div>
+</section>
+
+
+   <!-- Contact Section -->
+<section id="contact" class="contact-section">
+    <h2>Contacto</h2>
+    <div class="contact-container">
+        <div class="contact-form">
+            <h3>Contáctame</h3>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Nombre" required>
+                    <input type="text" id="surname" name="surname" placeholder="Apellido" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje" required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <div class="contact-map">
+           
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13089.616520529064!2d-56.1923705!3d-34.896306450000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f81d326a9ac27%3A0x329eddb76ffd09b5!2sUniversidad%20de%20la%20Empresa%20UDE!5e0!3m2!1ses-419!2suy!4v1724730416802!5m2!1ses-419!2suy" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>2024 MORA DESIGN. Todos los derechos reservados.</p>
+
+    </footer>
+
+    
+    <script>
+        // Get the button:
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+    
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+        // Obtener los elementos necesarios
+        const modal = document.getElementById("projectModal");
+        const modalImg = document.getElementById("modalImage");
+        const modalTitle = document.getElementById("modalTitle");
+        const modalDescription = document.getElementById("modalDescription");
+        const span = document.getElementsByClassName("close")[0];
+
+        // Asignar la funcionalidad de clic a los elementos de proyecto
+        document.querySelectorAll('.project-item').forEach(item => {
+            item.addEventListener('click', function() {
+                // Mostrar el modal
+                modal.style.display = "block";
+
+                // Cambiar el contenido del modal
+                const imgSrc = this.querySelector('img').src;
+                const title = this.getAttribute('data-title');
+                const description = this.getAttribute('data-description');
+
+                modalImg.src = imgSrc;
+                modalTitle.textContent = title;
+                modalDescription.textContent = description;
+            });
+        });
+
+        // Cerrar el modal al hacer clic en la "X"
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // Cerrar el modal al hacer clic fuera de la imagen o contenido
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+ document.querySelector('.menu-icon').addEventListener('click', function() {
+    document.querySelector('.nav-links').classList.toggle('show');
+});
+    </script>
+         
+
+
+
+</body>
+</html>
